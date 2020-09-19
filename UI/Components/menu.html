@@ -1,0 +1,45 @@
+<style>
+    #menu {
+        background-color: black;
+        width: 100%;
+        height: 5vh;
+        color:white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .menubutton {
+        background-color: black;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    .productLabel{
+        padding-left: 15%;
+    }
+    .buttongroup{
+        margin-left: auto;
+    }
+</style>
+<script>
+    $( "#homeButton" ).click(function() {
+        loadPage("/UI/Views/home.html");
+    });
+    $( "#testsButton" ).click(function() {
+        loadPage("/UI/Views/tests.html");
+    });
+    $( "#helpButton" ).click(function() {
+        loadPage("/UI/Views/help.html");
+    });
+</script>
+<div id="menu">
+    <div class="productLabel"><b>SimplejQ</b></div>
+    <div class="buttongroup">
+        <button class="menubutton" id="homeButton">Home</button>
+        <button class="menubutton" id="testsButton">Tests</button>
+        <button class="menubutton" id="helpButton">Help</button>
+    </div>
+</div>
